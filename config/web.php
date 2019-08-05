@@ -46,6 +46,8 @@ $config = [
 		'formatterPhone' => array(
                 'class' => 'klimovakaterina\phoneformatter\PhoneFormatter',
         ),
+
+
         /*
         'urlManager' => [
             'enablePrettyUrl' => true,
