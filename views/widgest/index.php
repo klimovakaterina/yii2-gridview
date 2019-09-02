@@ -2,6 +2,8 @@
 use yii\grid\GridView;
 use yii\data\ActiveDataProvider;
 
+use app\components\EditorWidget\EditorWidget;
+
 
 use app\helpers\KstringHelpers;
 //use yii\helpers\Html;
@@ -23,3 +25,13 @@ echo KstringHelpers::translitString("Купи слона");
 echo GridView::widget([
     'dataProvider' => $provider,
 ]);
+?>
+
+<div class="form-group field-election-election_description">
+    <textarea id="basic-example" class="form-control" name="Election[election_description]"></textarea>
+</div>
+<?
+EditorWidget::widget(['field' => 'basic-example']);
+
+
+echo '<hr>';
